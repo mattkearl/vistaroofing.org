@@ -7,60 +7,528 @@
     <meta name="description" content="Vista Roofing provides expert roofing services in St. George, Utah. Specializing in metal roofs, asphalt shingles, tile, and TPO membranes. Call (435) 216-8746 for a free estimate.">
     <meta name="keywords" content="roofing contractor St George Utah, roof installation St George, roof repair St George Utah, metal roofing St George, asphalt shingles St George Utah, tile roofing St George, TPO membrane roofing St George, gutter installation St George Utah">
     
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Preconnect to external domains -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    
     <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <!-- Custom CSS -->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="assets/images/favicon.ico">
 </head>
 <body>
-    <!-- Header -->
-    <header class="header">
-        <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
-            <div class="container">
-                <a class="navbar-brand fw-bold text-primary" href="index.html">Vista Roofing</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span class="navbar-toggler-icon"></span>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <div class="navbar-content">
+                <a href="#" class="logo">Vista Roofing</a>
+                
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                    <li><a href="#contact" class="btn btn-primary">Get Free Estimate</a></li>
+                </ul>
+                
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <i class="fas fa-bars"></i>
                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ms-auto">
-                        <li class="nav-item">
-                            <a class="nav-link" href="index.html">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="about.html">About Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="services.html">Services</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="projects.html">Projects</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Contact Us</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="btn btn-primary ms-2" href="contact.html">Get Free Estimate</a>
-                        </li>
-                    </ul>
-                </div>
             </div>
-        </nav>
-    </header>
+        </div>
+    </nav>
 
     <!-- Hero Section -->
-    <section class="hero-section">
-        <div class="hero-overlay">
-            <div class="container">
-                <div class="row align-items-center min-vh-100">
-                    <div class="col-lg-6">
-                        <h1 class="display-4 fw-bold text-white mb-4">Professional Roofing Services in St. George, Utah</h1>
-                        <p class="lead text-white mb-4">Expert installation and repair of metal roofs, asphalt shingles, tile, and TPO membranes. Serving St. George, Hurricane, Washington, and surrounding areas.</p>
-                        <div class="d-flex flex-column flex-sm-row gap-3">
-                            <a href="contact.html" class="btn btn-primary btn-lg">Get Free Estimate</a>
-                            <a href="tel:+14352168746" class="btn btn-outline-light btn-lg">
-                                <i class="fas fa-phone me-2"></i>(435) 216-8746
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content text-center">
+                <h1>Professional Roofing Services in St. George, Utah</h1>
+                <p class="lead">Expert installation and repair of metal roofs, asphalt shingles, tile, and TPO membranes. Serving St. George, Hurricane, Washington, and surrounding areas with quality craftsmanship you can trust.</p>
+                <div class="hero-actions justify-center">
+                    <a href="#contact" class="btn btn-primary btn-lg">
+                        <i class="fas fa-calculator"></i>
+                        Get Free Estimate
+                    </a>
+                    <a href="tel:+14352168746" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone"></i>
+                        (435) 216-8746
+                    </a>
+                </div>
+                
+                <!-- Trust Indicators -->
+                <div class="hero-trust-indicators mt-5">
+                    <div class="grid grid-4 text-center">
+                        <div class="trust-item">
+                            <div class="trust-number">50+</div>
+                            <div class="trust-label">Projects Completed</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">100%</div>
+                            <div class="trust-label">Customer Satisfaction</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">24/7</div>
+                            <div class="trust-label">Emergency Service</div>
+                        </div>
+                        <div class="trust-item">
+                            <div class="trust-number">2024</div>
+                            <div class="trust-label">Established</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our Roofing Services</h2>
+                <p class="lead">Comprehensive roofing solutions for residential and commercial properties throughout Southern Utah</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="service-card">
+                    <img src="assets/images/57302-206172.jpg" alt="Metal roofing installation" class="service-image">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-hammer"></i>
+                        </div>
+                        <h3>Metal Roofing</h3>
+                        <p>Durable, energy-efficient metal roof installations and repairs for lasting protection against Southern Utah's climate.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="assets/images/695910-1726791.jpg" alt="Asphalt shingle roofing" class="service-image">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-home"></i>
+                        </div>
+                        <h3>Asphalt Shingles</h3>
+                        <p>High-quality asphalt shingle installation and repair services with excellent value and weather resistance.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="assets/images/12571-347152.jpg" alt="Tile roofing installation" class="service-image">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h3>Tile Roofing</h3>
+                        <p>Traditional tile roof installation and maintenance for classic Southwestern beauty and longevity.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="assets/images/57302-206172.jpg" alt="Commercial roofing" class="service-image">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tools"></i>
+                        </div>
+                        <h3>TPO Membranes</h3>
+                        <p>Commercial-grade TPO membrane installation and repair for flat roofs with superior energy efficiency.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <img src="assets/images/966397.jpg" alt="Gutter installation" class="service-image">
+                    <div class="service-content">
+                        <div class="service-icon">
+                            <i class="fas fa-tint"></i>
+                        </div>
+                        <h3>Gutter Services</h3>
+                        <p>Complete gutter installation and repair services to protect your property from water damage.</p>
+                    </div>
+                </div>
+                
+                <div class="service-card">
+                    <div class="service-icon">
+                        <i class="fas fa-exclamation-triangle"></i>
+                    </div>
+                    <h3>Emergency Repairs</h3>
+                    <p>24/7 emergency roof repair services when you need immediate protection for your property.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Why Choose Vista Roofing?</h2>
+                <p class="lead">Founded in 2024 by Jose Martinez, Vista Roofing brings years of expertise and a commitment to excellence to every project.</p>
+            </div>
+            
+            <div class="grid grid-2 items-center mb-5">
+                <div>
+                    <h3>Meet Our Team</h3>
+                    <p class="lead">Jose Martinez founded Vista Roofing with a vision to provide exceptional roofing services throughout Southern Utah.</p>
+                    <p>With years of experience in the roofing industry, Jose leads a team of skilled professionals who bring a commitment to quality workmanship and customer satisfaction that sets Vista Roofing apart from the competition.</p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary">Get Your Free Estimate</a>
+                    </div>
+                </div>
+                
+                <div class="text-center">
+                    <div class="founder-card">
+                        <img src="assets/images/IMG_4400.jpg" alt="Jose Martinez, Founder" class="founder-photo">
+                        <h4>Jose Martinez</h4>
+                        <p class="text-secondary">Founder & Lead Contractor</p>
+                        <div class="founder-credentials">
+                            <span class="credential-badge">Licensed</span>
+                            <span class="credential-badge">Insured</span>
+                            <span class="credential-badge">Experienced</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Company Story Section -->
+            <div class="grid grid-2 items-center mb-5">
+                <div class="text-center">
+                    <img src="assets/images/IMG_4405.jpg" alt="Vista Roofing in action" class="company-photo">
+                </div>
+                <div>
+                    <h3>Our Company Story</h3>
+                    <p class="lead">Vista Roofing was founded on the principle of delivering exceptional roofing services with uncompromising quality and integrity.</p>
+                    <p>Based in St. George, Utah, we understand the unique challenges that Southern Utah's climate presents to roofing systems. From scorching summer heat to sudden storms, we've designed our services to protect your most valuable investment - your home or business.</p>
+                    <p>Our commitment to excellence, combined with our deep local knowledge and use of premium materials, ensures that every project we undertake meets the highest standards of durability and craftsmanship.</p>
+                    <div class="mt-4">
+                        <a href="#contact" class="btn btn-primary">Start Your Project</a>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="grid grid-4 text-center">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h4>Licensed & Insured</h4>
+                    <p class="text-secondary">Fully licensed and insured for your complete peace of mind and protection.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <h4>Emergency Services</h4>
+                    <p class="text-secondary">24/7 emergency roof repair services when you need immediate protection.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>Quality Workmanship</h4>
+                    <p class="text-secondary">Committed to excellence in every project with attention to detail.</p>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <h4>Local Expertise</h4>
+                    <p class="text-secondary">Deep knowledge of Southern Utah's unique climate and roofing needs.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>What Our Customers Say</h2>
+                <p class="lead">Don't just take our word for it - hear from satisfied customers throughout St. George and surrounding areas</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="testimonial-text">"Vista Roofing did an excellent job replacing our metal roof. Jose was professional, punctual, and the quality of work exceeded our expectations. Highly recommend!"</p>
+                    <h5 class="testimonial-author">Sarah Mitchell</h5>
+                    <p class="testimonial-location">St. George, Utah</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="testimonial-text">"When our roof was damaged in a storm, Vista Roofing responded quickly and had us back to normal in no time. Their emergency services are outstanding!"</p>
+                    <h5 class="testimonial-author">Mike Thompson</h5>
+                    <p class="testimonial-location">Hurricane, Utah</p>
+                </div>
+                
+                <div class="testimonial">
+                    <div class="testimonial-avatar">
+                        <i class="fas fa-user-circle"></i>
+                    </div>
+                    <div class="testimonial-rating">
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                        <i class="fas fa-star star"></i>
+                    </div>
+                    <p class="testimonial-text">"The tile roof installation was flawless. The team was clean, professional, and finished ahead of schedule. We couldn't be happier with the results!"</p>
+                    <h5 class="testimonial-author">Jennifer Davis</h5>
+                    <p class="testimonial-location">Washington, Utah</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Our Simple Process</h2>
+                <p class="lead">Getting your roof project started is easy with our streamlined process</p>
+            </div>
+            
+            <div class="grid grid-4 text-center">
+                <div class="process-step">
+                    <div class="process-number">1</div>
+                    <h4>Free Inspection</h4>
+                    <p class="text-secondary">We provide a comprehensive roof inspection and detailed estimate at no cost to you.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">2</div>
+                    <h4>Planning & Design</h4>
+                    <p class="text-secondary">We create a detailed plan tailored to your specific needs and budget requirements.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">3</div>
+                    <h4>Professional Installation</h4>
+                    <p class="text-secondary">Our experienced team performs the installation with precision and attention to detail.</p>
+                </div>
+                
+                <div class="process-step">
+                    <div class="process-number">4</div>
+                    <h4>Quality Assurance</h4>
+                    <p class="text-secondary">We conduct a final inspection to ensure everything meets our high standards.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Areas Section -->
+    <section class="section bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2>Areas We Serve</h2>
+                <p class="lead">Vista Roofing proudly serves St. George and surrounding communities throughout Southern Utah</p>
+            </div>
+            
+            <div class="grid grid-4 text-center">
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>St. George</h4>
+                </div>
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>Hurricane</h4>
+                </div>
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>Washington</h4>
+                </div>
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>Ivins</h4>
+                </div>
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>Santa Clara</h4>
+                </div>
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>Bloomington</h4>
+                </div>
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>Leeds</h4>
+                </div>
+                <div class="location-card">
+                    <i class="fas fa-map-marker-alt text-primary"></i>
+                    <h4>Toquerville</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section id="contact" class="section bg-primary text-white">
+        <div class="container">
+            <div class="text-center">
+                <h2 class="text-white">Ready to Get Started?</h2>
+                <p class="lead text-white">Contact Vista Roofing today for a free estimate on your roofing project. We serve St. George, Hurricane, Washington, and surrounding areas.</p>
+                <div class="hero-actions justify-center">
+                    <a href="#contact-form" class="btn btn-secondary btn-lg">
+                        <i class="fas fa-calculator"></i>
+                        Get Free Estimate
+                    </a>
+                    <a href="tel:+14352168746" class="btn btn-outline btn-lg">
+                        <i class="fas fa-phone"></i>
+                        (435) 216-8746
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section id="contact-form" class="section">
+        <div class="container">
+            <div class="grid grid-2 items-start">
+                <div class="contact-form">
+                    <h3>Get Your Free Estimate</h3>
+                    <p class="text-secondary">Fill out the form below and we'll get back to you within 24 hours with a detailed estimate for your roofing project.</p>
+                    
+                    <form id="contact-form" class="mt-4">
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label for="name" class="form-label">Full Name *</label>
+                                <input type="text" id="name" name="name" class="form-control" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-control" required>
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-2">
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-control">
+                            </div>
+                            <div class="form-group">
+                                <label for="service" class="form-label">Service Needed</label>
+                                <select id="service" name="service" class="form-control">
+                                    <option value="">Select a service</option>
+                                    <option value="Metal Roofing">Metal Roofing</option>
+                                    <option value="Asphalt Shingles">Asphalt Shingles</option>
+                                    <option value="Tile Roofing">Tile Roofing</option>
+                                    <option value="TPO Membrane">TPO Membrane</option>
+                                    <option value="Gutter Installation">Gutter Installation</option>
+                                    <option value="Roof Repair">Roof Repair</option>
+                                    <option value="Emergency Service">Emergency Service</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="location" class="form-label">Property Location</label>
+                            <input type="text" id="location" name="location" class="form-control" placeholder="City, Utah (e.g., St. George, Utah)">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message" class="form-label">Project Details *</label>
+                            <textarea id="message" name="message" class="form-control" rows="5" placeholder="Please describe your roofing needs, timeline, and any specific requirements..." required></textarea>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label class="flex items-center">
+                                <input type="checkbox" name="consent" required style="margin-right: 8px;">
+                                <span>I agree to be contacted by Vista Roofing regarding my roofing project. *</span>
+                            </label>
+                        </div>
+                        
+                        <button type="submit" class="btn btn-primary btn-lg">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+                
+                <div>
+                    <div class="card">
+                        <div class="card-body">
+                            <h4>Contact Information</h4>
+                            
+                            <div class="flex items-center mb-3">
+                                <div class="service-icon" style="width: 50px; height: 50px; margin-right: 16px;">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div>
+                                    <h5>(435) 216-8746</h5>
+                                    <a href="tel:+14352168746" class="btn btn-secondary" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem;">Call Now</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center mb-3">
+                                <div class="service-icon" style="width: 50px; height: 50px; margin-right: 16px;">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div>
+                                    <h5>vistaroofing01@gmail.com</h5>
+                                    <a href="mailto:vistaroofing01@gmail.com" class="btn btn-secondary" style="padding: var(--spacing-sm) var(--spacing-md); font-size: 0.875rem;">Email Us</a>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center mb-3">
+                                <div class="service-icon" style="width: 50px; height: 50px; margin-right: 16px;">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div>
+                                    <h5>Service Area</h5>
+                                    <p class="text-secondary mb-0">St. George, Utah and surrounding areas</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-center mb-3">
+                                <div class="service-icon" style="width: 50px; height: 50px; margin-right: 16px;">
+                                    <i class="fas fa-clock"></i>
+                                </div>
+                                <div>
+                                    <h5>Business Hours</h5>
+                                    <p class="text-secondary mb-0">Monday - Friday: 8:00 AM - 6:00 PM<br>Saturday: 9:00 AM - 4:00 PM<br>Sunday: Emergency Services Only</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mt-4" style="background: linear-gradient(135deg, #fef3c7, #fde68a); border: 1px solid #f59e0b;">
+                        <div class="card-body">
+                            <div class="flex items-center mb-3">
+                                <i class="fas fa-exclamation-triangle" style="color: #f59e0b; font-size: 1.5rem; margin-right: 12px;"></i>
+                                <h4 style="color: #92400e;">Emergency Services</h4>
+                            </div>
+                            <p class="text-secondary mb-3">Need immediate roof repair? We offer 24/7 emergency services for urgent roofing issues.</p>
+                            <a href="tel:+14352168746" class="btn btn-primary btn-lg" style="background: #f59e0b; border-color: #f59e0b; width: 100%;">
+                                <i class="fas fa-phone"></i>
+                                Call Emergency Line
                             </a>
                         </div>
                     </div>
@@ -69,238 +537,41 @@
         </div>
     </section>
 
-    <!-- Services Overview -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="display-5 fw-bold mb-3">Our Roofing Services</h2>
-                    <p class="lead text-muted">Vista Roofing specializes in comprehensive roofing solutions for residential and commercial properties throughout Southern Utah.</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center h-100">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-hammer text-primary"></i>
-                        </div>
-                        <h5 class="fw-bold">Metal Roofing</h5>
-                        <p class="text-muted">Durable, energy-efficient metal roof installations and repairs for lasting protection.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center h-100">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-home text-primary"></i>
-                        </div>
-                        <h5 class="fw-bold">Asphalt Shingles</h5>
-                        <p class="text-muted">High-quality asphalt shingle installation and repair services for your home.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center h-100">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-building text-primary"></i>
-                        </div>
-                        <h5 class="fw-bold">Tile Roofing</h5>
-                        <p class="text-muted">Traditional tile roof installation and maintenance for classic beauty and longevity.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="service-card text-center h-100">
-                        <div class="service-icon mb-3">
-                            <i class="fas fa-tools text-primary"></i>
-                        </div>
-                        <h5 class="fw-bold">TPO Membranes</h5>
-                        <p class="text-muted">Commercial-grade TPO membrane installation and repair for flat roofs.</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Why Choose Us -->
-    <section class="py-5 bg-light">
-        <div class="container">
-            <div class="row align-items-center">
-                <div class="col-lg-6">
-                    <h2 class="display-5 fw-bold mb-4">Why Choose Vista Roofing?</h2>
-                    <div class="row g-3">
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-check-circle text-primary fs-4"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h5 class="fw-bold">Licensed & Insured</h5>
-                                    <p class="text-muted mb-0">Fully licensed and insured for your peace of mind.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-clock text-primary fs-4"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h5 class="fw-bold">Emergency Services</h5>
-                                    <p class="text-muted mb-0">24/7 emergency roof repair services available.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-star text-primary fs-4"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h5 class="fw-bold">Quality Workmanship</h5>
-                                    <p class="text-muted mb-0">Committed to excellence in every roofing project.</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12">
-                            <div class="d-flex">
-                                <div class="flex-shrink-0">
-                                    <i class="fas fa-map-marker-alt text-primary fs-4"></i>
-                                </div>
-                                <div class="flex-grow-1 ms-3">
-                                    <h5 class="fw-bold">Local Expertise</h5>
-                                    <p class="text-muted mb-0">Deep knowledge of Southern Utah's unique roofing needs.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-6">
-                    <div class="about-image">
-                        <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Professional roofer working" class="img-fluid rounded shadow">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials -->
-    <section class="py-5">
-        <div class="container">
-            <div class="row text-center mb-5">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="display-5 fw-bold mb-3">What Our Customers Say</h2>
-                    <p class="lead text-muted">Don't just take our word for it - hear from satisfied customers throughout St. George and surrounding areas.</p>
-                </div>
-            </div>
-            <div class="row g-4">
-                <div class="col-lg-4">
-                    <div class="testimonial-card text-center h-100">
-                        <div class="stars mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="mb-4">"Vista Roofing did an excellent job replacing our metal roof. Jose was professional, punctual, and the quality of work exceeded our expectations."</p>
-                        <h6 class="fw-bold">Sarah Mitchell</h6>
-                        <small class="text-muted">St. George, Utah</small>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-card text-center h-100">
-                        <div class="stars mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="mb-4">"When our roof was damaged in a storm, Vista Roofing responded quickly and had us back to normal in no time. Highly recommend their emergency services."</p>
-                        <h6 class="fw-bold">Mike Thompson</h6>
-                        <small class="text-muted">Hurricane, Utah</small>
-                    </div>
-                </div>
-                <div class="col-lg-4">
-                    <div class="testimonial-card text-center h-100">
-                        <div class="stars mb-3">
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                            <i class="fas fa-star text-warning"></i>
-                        </div>
-                        <p class="mb-4">"The tile roof installation was flawless. The team was clean, professional, and finished ahead of schedule. We couldn't be happier with the results."</p>
-                        <h6 class="fw-bold">Jennifer Davis</h6>
-                        <small class="text-muted">Washington, Utah</small>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- CTA Section -->
-    <section class="py-5 bg-primary text-white">
-        <div class="container">
-            <div class="row text-center">
-                <div class="col-lg-8 mx-auto">
-                    <h2 class="display-5 fw-bold mb-3">Ready to Get Started?</h2>
-                    <p class="lead mb-4">Contact Vista Roofing today for a free estimate on your roofing project. We serve St. George, Hurricane, Washington, and surrounding areas.</p>
-                    <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                        <a href="contact.html" class="btn btn-light btn-lg">Get Free Estimate</a>
-                        <a href="tel:+14352168746" class="btn btn-outline-light btn-lg">
-                            <i class="fas fa-phone me-2"></i>(435) 216-8746
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
     <!-- Footer -->
-    <footer class="bg-dark text-white py-5">
+    <footer class="footer">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-4 mb-4">
-                    <h5 class="fw-bold mb-3">Vista Roofing</h5>
-                    <p class="text-light">Professional roofing services in St. George, Utah. Specializing in metal roofs, asphalt shingles, tile, and TPO membranes.</p>
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Vista Roofing</h3>
+                    <p>Professional roofing services in St. George, Utah. Specializing in metal roofs, asphalt shingles, tile, and TPO membranes.</p>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h6 class="fw-bold mb-3">Quick Links</h6>
-                    <ul class="list-unstyled">
-                        <li><a href="index.html" class="text-light text-decoration-none">Home</a></li>
-                        <li><a href="about.html" class="text-light text-decoration-none">About Us</a></li>
-                        <li><a href="services.html" class="text-light text-decoration-none">Services</a></li>
-                        <li><a href="projects.html" class="text-light text-decoration-none">Projects</a></li>
-                        <li><a href="contact.html" class="text-light text-decoration-none">Contact Us</a></li>
+                
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul style="list-style: none; padding: 0;">
+                        <li style="margin-bottom: 8px;"><a href="#home">Home</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#about">About Us</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#services">Services</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#projects">Projects</a></li>
+                        <li style="margin-bottom: 8px;"><a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 mb-4">
-                    <h6 class="fw-bold mb-3">Contact Info</h6>
-                    <p class="text-light mb-2">
-                        <i class="fas fa-phone me-2"></i>(435) 216-8746
-                    </p>
-                    <p class="text-light mb-2">
-                        <i class="fas fa-envelope me-2"></i>vistaroofing01@gmail.com
-                    </p>
-                    <p class="text-light mb-0">
-                        <i class="fas fa-map-marker-alt me-2"></i>St. George, Utah
-                    </p>
+                
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p><i class="fas fa-phone" style="margin-right: 8px;"></i>(435) 216-8746</p>
+                    <p><i class="fas fa-envelope" style="margin-right: 8px;"></i>vistaroofing01@gmail.com</p>
+                    <p><i class="fas fa-map-marker-alt" style="margin-right: 8px;"></i>St. George, Utah</p>
                 </div>
             </div>
-            <hr class="my-4">
-            <div class="row align-items-center">
-                <div class="col-md-6">
-                    <p class="mb-0 text-light">&copy; 2024 Vista Roofing. All rights reserved.</p>
-                </div>
-                <div class="col-md-6 text-md-end">
-                    <p class="mb-0 text-light">Licensed & Insured Roofing Contractor</p>
-                </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2024 Vista Roofing. All rights reserved. | Licensed & Insured Roofing Contractor</p>
             </div>
         </div>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
-    <!-- Custom JS -->
-    <script src="js/script.js"></script>
+    <!-- JavaScript -->
+    <script src="assets/js/main.js"></script>
 </body>
 </html>
