@@ -351,8 +351,7 @@ p {
   display: flex;
   align-items: center;
   background-color: var(--primary-blue);
-  /*background-image: linear-gradient(135deg, rgba(30, 64, 175, 0.9), rgba(59, 130, 246, 0.8)), url('assets/images/186077.jpg?v=1');*/
-  background-image: url('assets/images/IMG_4400.jpg');
+  background-image: linear-gradient(135deg, rgba(30, 64, 175, .9), rgba(59, 130, 246, 0.3)), url('assets/images/IMG_4423.jpg');
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
