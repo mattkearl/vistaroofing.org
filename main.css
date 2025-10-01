@@ -447,7 +447,7 @@ p {
 .service-icon {
   width: 60px;
   height: 60px;
-  margin: 0 auto var(--spacing-md);
+  margin: 0 var(--spacing-md);
   background: linear-gradient(135deg, var(--primary-blue), var(--primary-blue-light));
   border-radius: 50%;
   display: flex;
@@ -609,17 +609,6 @@ p {
   text-align: center;
   position: relative;
   border: 1px solid var(--gray-200);
-}
-
-.testimonial::before {
-  content: '"';
-  position: absolute;
-  top: -10px;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 4rem;
-  color: var(--primary-blue);
-  font-family: serif;
 }
 
 .testimonial-avatar {
