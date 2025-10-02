@@ -182,7 +182,7 @@ class VistaRoofingApp {
   async handleFormSubmission(form) {
     const submitButton = form.querySelector('button[type="submit"]');
     const originalText = submitButton.textContent;
-    
+
     // Validate all fields
     let isFormValid = true;
     form.querySelectorAll('.form-control').forEach(field => {
@@ -202,18 +202,19 @@ class VistaRoofingApp {
 
     try {
       const formData = new FormData(form);
-      const response = await fetch('assets/php/contact.php', {
+      const response = await fetch('https://formspree.io/f/manpjdzl', {
         method: 'POST',
-        body: formData
+        body: formData,
+        headers: {
+          'Accept': 'application/json'
+        }
       });
 
-      const result = await response.json();
-
-      if (result.success) {
+      if (response.ok) {
         this.showNotification('Thank you! Your message has been sent successfully.', 'success');
         form.reset();
       } else {
-        this.showNotification(result.message || 'Sorry, there was an error sending your message.', 'error');
+        this.showNotification('Sorry, there was an error sending your message. Please try again.', 'error');
       }
     } catch (error) {
       console.error('Form submission error:', error);

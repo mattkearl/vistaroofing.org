@@ -100,8 +100,8 @@ vistaroofing.org/
 ### Contact Information
 - **Phone**: (435) 216-8746 (with tel: links for mobile)
 - **Email**: vistaroofing01@gmail.com
-- **Form Submissions**: mkearl@gmail.com
-- **Business Hours**: Monday-Friday 8AM-6PM, Saturday 9AM-4PM
+- **Form Submissions**: vistaroofing01@gmail.com (via Formspree)
+- **Business Hours**: Monday-Friday 8AM-5PM, Saturday 8AM-3PM
 
 ## 🔧 Setup Instructions
 
