@@ -11,6 +11,7 @@ class VistaRoofingApp {
     this.setupFormHandling();
     this.setupAnimations();
     this.setupMobileMenu();
+    this.setupGallery();
   }
 
   // Navigation functionality
@@ -302,6 +303,71 @@ class VistaRoofingApp {
         setTimeout(() => notification.remove(), 300);
       }
     }, 5000);
+  }
+
+  // Gallery functionality
+  setupGallery() {
+    const galleryItems = document.querySelectorAll('.gallery-item');
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightbox-image');
+    const closeBtn = document.querySelector('.lightbox-close');
+    const prevBtn = document.querySelector('.lightbox-prev');
+    const nextBtn = document.querySelector('.lightbox-next');
+
+    if (!galleryItems.length || !lightbox) return;
+
+    let currentIndex = 0;
+    const images = Array.from(galleryItems).map(item => item.dataset.image);
+
+    // Open lightbox
+    galleryItems.forEach((item, index) => {
+      item.addEventListener('click', () => {
+        currentIndex = index;
+        openLightbox();
+      });
+    });
+
+    const openLightbox = () => {
+      lightboxImage.src = images[currentIndex];
+      lightbox.classList.add('active');
+      document.body.style.overflow = 'hidden';
+    };
+
+    const closeLightbox = () => {
+      lightbox.classList.remove('active');
+      document.body.style.overflow = '';
+    };
+
+    const showPrevImage = () => {
+      currentIndex = (currentIndex - 1 + images.length) % images.length;
+      lightboxImage.src = images[currentIndex];
+    };
+
+    const showNextImage = () => {
+      currentIndex = (currentIndex + 1) % images.length;
+      lightboxImage.src = images[currentIndex];
+    };
+
+    // Event listeners
+    closeBtn.addEventListener('click', closeLightbox);
+    prevBtn.addEventListener('click', showPrevImage);
+    nextBtn.addEventListener('click', showNextImage);
+
+    // Close on background click
+    lightbox.addEventListener('click', (e) => {
+      if (e.target === lightbox) {
+        closeLightbox();
+      }
+    });
+
+    // Keyboard navigation
+    document.addEventListener('keydown', (e) => {
+      if (!lightbox.classList.contains('active')) return;
+
+      if (e.key === 'Escape') closeLightbox();
+      if (e.key === 'ArrowLeft') showPrevImage();
+      if (e.key === 'ArrowRight') showNextImage();
+    });
   }
 
   // Utility methods
